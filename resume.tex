@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[UTF8]{ctex}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\begin{wrapfigure}{r}{70pt}
+\vspace{-20pt}
+\includegraphics[height=32.74mm,width=24.65mm]{photo.jpeg}
+\end{wrapfigure}
+\name{钱\quad{洋}} % Your name
+\address{Blog | https://foxliveray.github.io/} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+86)15088721518 \\ 275239328@qq.com} % Your phone number and email
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育经历}
+
+{\bf 西蒙弗雷泽大学, 加拿大温哥华} \hfill {\em 2020.09 - 2022.08} 
+\\ 计算机科学与技术，硕士双学位\\
+\\{\bf 浙江大学，浙江杭州} \hfill {\em 2019.09 - 2021.06} 
+\\ 软件工程硕士，软件学院 \hfill {GPA：87.1/100 }
+\\荣誉：2019-2020学年获优秀研究生\\
+\\{\bf 北京交通大学，北京} \hfill {\em 2015.09 - 2019.06} 
+\\ 软件工程学士，软件学院 \hfill {GPA：90.7/100｜Rank：18/170 }
+\\荣誉：2016-2017学年获校级优秀学生干部；3年均获得学习奖学金、社会工作奖学金；获校级大学生创新创业项目奖项
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作经历}
+
+\\{\bf 北京字节跳动网络有限公司}\hfill {\em 2020.05 - 2021.02}
+\\EA BPM后端研发实习\\
+项目描述：负责敏捷流程和事件平台的功能迭代，敏捷流程用于业务审批流程的自定义搭建和流转，事件平台用于解耦流程和节点的事件调用\\
+\textbf{·} 负责敏捷版本迭代，包括表单发起条件和数据校验、扩展审批拒绝回退节点、优化表单数据Excel导出与表单版本更新逻辑、表单搜索控件外部数据源的集成，多入参数据源联动关系改造等，输出接入文档\\
+\textbf{·} 负责扩展Open API接口功能，包括附件上传、流程数据和审批任务查询、支持发起接口审批人自选等\\
+\textbf{·} 实现Open API基于接入应用AppId维度的鉴权，完善接口校验逻辑，文件处理类接口做跨域处理\\
+\textbf{·} 基于业务方流程定制化事件平台开发，通过定时任务实现自动化；接入飞书开放平台定制bot消息和邮件发送；基于Redis实现了延迟任务队列，用于处理一些延迟事件调用的需求
+
+\\{\bf 浙大区块链研究中心}\hfill {\em 2018.10 - 2019.03}
+\\项目描述：与华为可靠性部门合作研究区块链在车联网系统中的可落地场景\\
+\textbf{·} 阅读车联网相关论文，发现解决女巫攻击的业内方案存在CA服务器负载过大的问题\\
+\textbf{·} 根据业内SCMS和C-ITS标准，基于PKI体系，设计区块链存储分发证书架构方案\\
+\textbf{·} 利用Docker搭建Hyperleger Fabric区块链集群\\
+\textbf{·} 调用Fabric Java和Go SDK实现车辆证书包的上链存储与下发\\
+\textbf{·} 完成性能测试，FMEA失效模式分析和验证，公式算法替换测试
+
+\\{\bf 君兰教育有限公司}\hfill {\em 2018.09 - 2018.12}
+\\项目描述：辅助线下语言表演类课程，提供在线配套音视频材料学习、练习和录制功能的Android应用\\
+\textbf{·} 负责基于MVP架构搭建Android项目开发框架\\
+\textbf{·} 基于观察者模式思想，通过RxJava和Retrofit实现异步网络通信，完成与后端接口的交互\\
+\textbf{·} 采用Google标准的Material Design实现统一风格的交互界面\\
+\textbf{·} 完成1.0版本研发，包括用户基本信息模块、教材翻页浏览、视频教程播放、音视频录制上传等业务功能
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{项目经历}
+{\bf 基于区块链的文物管理系统}\\
+\textbf{·} 基于SpringBoot与MyBatisPlus搭建项目开发框架，利用Docker做容器化部署，Nginx做负载均衡\\
+\textbf{·} 基于Shiro安全框架实现用户RBAC权限控制，完成角色、菜单、权限管理模块的功能\\
+\textbf{·} 基于趣链HyperChain区块链平台SDK对文物基础信息、交易信息、流转信息、出入境信息等上链存储，实现文物交易溯源业务功能
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{专业技能}
+{\bf 后端研发为主，具备客户端开发能力}\\
+\textbf{·} 数据结构、算法、计算机网络、操作系统基础较扎实\\
+\textbf{·} 熟悉Java语法，IO，集合框架，多线程和并发编程知识\\
+\textbf{·} 了解JVM内存模型、垃圾回收机制和类加载机制，有过一些GC异常排查和优化的实践\\
+\textbf{·} 有一定的Python，PHP开发经验，Golang，C，C++编程经验\\
+\textbf{·} 熟练使⽤Git⼯具进⾏协同开发，熟练使⽤Maven,Gradle等依赖构建⼯具\\ \textbf{·} 熟悉MySQL数据库和Redis⾮关系型数据库，了解HBase，Hadoop，Spark\\
+\textbf{·} 熟练使⽤SpringBoot、MyBatis等开源框架，了解Docker容器化部署和K8S集群管理\\ 
+\textbf{·} 了解Kafka，RocketMQ等消息中间件，使用RocketMQ完成业务功能解耦和异步\\
+\textbf{·} 了解分布式理论、微服务架构和服务网格概念，了解Zookeeper，Thrift，Dubbo\\ 
+\textbf{·} 熟悉常⽤的Linux命令，能够编写Shell脚本\\ 
+\textbf{·} 熟悉CICD持续集成和持续部署的过程，了解DDD领域驱动设计思想和常用设计模式\\ 
+\textbf{·} 具备良好的英语⽔平，能够阅读英文文献和文档资料，CET-6 : 546，托福 ：92
+
+
+\end{rSection}
+
+\end{document}
